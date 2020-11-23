@@ -20,8 +20,7 @@ git clone https://github.com/jarednthomas/mac-mojave-dynamic
 Fix paths to images in xml file by replacing my user path (/home/jared/) with your username.
 ```sh
 cd mac-mojave-dynamic
-whoami
-sed -i 's/jared/your_username/g' mojave_dynamic.xml
+sed -i 's/jared/'$(whoami)'/g' mojave_dynamic.xml
 ```
 
 Set background to xml file.
